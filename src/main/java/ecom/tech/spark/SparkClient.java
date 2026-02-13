@@ -18,7 +18,6 @@ public class SparkClient {
                 .config("spark.hadoop.fs.s3a.aws.credentials.provider",
                         "org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider")
                 .getOrCreate();
-//        spark.sparkContext().setLogLevel("ERROR");
         return spark;
     }
 }

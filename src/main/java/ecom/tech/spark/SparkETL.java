@@ -106,8 +106,7 @@ public class SparkETL {
                 topStores.coalesce(1)
                         .write()
                         .mode(SaveMode.Overwrite)
-                        .option("header", "true")
-                        .csv(outputPath);
+                        .parquet(outputPath);
 
                 log.info("Result saved to: {}", outputPath);
             } else {
