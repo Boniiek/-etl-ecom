@@ -5,7 +5,7 @@ ETL приложение для расчета топ-3 магазинов по 
 S3_ENDPOINT=http://minio:9000 \
 S3_ACCESS_KEY=etl \
 S3_SECRET_KEY=etladmin123\
-S3_BUCKET_NAME=etl-data\
+S3_BUCKET_NAME=etl-data
 
 * Запуск приложения: \
 docker-compose up --build -d
