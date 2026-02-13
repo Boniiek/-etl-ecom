@@ -8,7 +8,7 @@ S3_SECRET_KEY=etladmin123\
 S3_BUCKET_NAME=etl-data
 
 * Запуск приложения: \
-docker-compose up --build -d
+docker-compose up --build
 
 
 * После запуска приложения: 
