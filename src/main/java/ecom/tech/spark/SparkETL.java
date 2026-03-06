@@ -63,7 +63,6 @@ public class SparkETL {
             }
 
             Dataset<Row> validOrders = orders
-                    .filter(col("status").isin("completed", "delivered", "paid"))
                     .join(users2025, orders.col("user_id").equalTo(users2025.col("user_id")), "inner")
                     .select(orders.col("store_id"), orders.col("amount"));
 
